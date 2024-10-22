@@ -1,0 +1,11 @@
+{
+  "explorer.openEditors.visible": 25,
+  "search.defaultViewMode": "list",
+  "explorer.compactFolders": true,
+  "explorer.decorations.badges": true,
+  "explorer.decorations.colors": true,
+  "explorer.excludeGitIgnore": false,
+  "explorer.openEditors.sortOrder": "editorOrder",
+  "explorer.fileNesting.enabled": false,
+  "explorer.sortOrderReverse": false
+}
