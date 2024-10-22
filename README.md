@@ -1,21 +1,20 @@
-# Late_Show
-
-## Flask API for Late Show Episodes
-
-## Overview
-
-This API provides functionality to manage episodes and guest appearances on a late show.
+# Late_Showstructure
 
 ## Structure
 
-/Late_Show
-├── app.py
-├── models.py
-├── migrations/
-├── seed.py
+├── data.js
+├── LateShow_App
+│   ├── app.py
+│   ├── config.py
+│   ├── __init__.py
+│   ├── instance
+│   │   └── app.db
+│   ├── models.py
+│   └── seed.py
 ├── Pipfile
 ├── Pipfile.lock
 └── README.md
+
 
 ## Setup Instructions
 
