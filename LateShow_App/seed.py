@@ -9,19 +9,23 @@ with app.app_context():
     db.create_all()
     db.session.commit()
 
-    # Seed data
+    # First check if the database is empty before seeding
+    # Seed data:
+if Guest.query.count() == 0:
     guest1 = Guest(name="John Doe", occupation="Actor")
     guest2 = Guest(name="Jane Doe", occupation="Actress")
     guest3 = Guest(name="Bob Smith", occupation="Actor")
     db.session.add_all([guest1, guest2, guest3])
     db.session.commit()
 
+if Episode.query.count() == 0:
     episode1 = Episode(date="2022-01-01", number=1)
     episode2 = Episode(date="2022-01-02", number=2)
     episode3 = Episode(date="2022-01-03", number=3)
     db.session.add_all([episode1, episode2, episode3])
     db.session.commit()
 
+if Appearance.query.count() == 0:
     appearance1 = Appearance(rating=5, episode_id=1, guest_id=1)
     appearance2 = Appearance(rating=4, episode_id=2, guest_id=2)
     appearance3 = Appearance(rating=3, episode_id=3, guest_id=3)
